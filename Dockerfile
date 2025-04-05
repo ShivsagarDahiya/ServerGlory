@@ -18,7 +18,7 @@ EXPOSE 8080
 ENTRYPOINT ["java", "-jar", "app.jar"]
 
 # Add a volume to store logs
-VOLUME /tmp
+# VOLUME /tmp
 
 # Copy the JAR file to the container
 ARG JAR_FILE=target/*.jar
